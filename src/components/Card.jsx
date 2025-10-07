@@ -1,0 +1,19 @@
+import React from 'react'
+import { BiDownload } from 'react-icons/bi';
+import { FaStar } from 'react-icons/fa6';
+
+const Card = ({app}) => {
+    const {image, title, downloads, ratingAvg} = app
+    return (
+        <div className='bg-white py-5 px-3 rounded-md'>
+            <img className='w-full h-auto max-w-[250px] aspect-square object-contain mx-auto rounded-lg' src={image} alt="" />
+            <h3 className='lg:ml-4 mt-4 text-[#001931] font-semibold text-lg'>{title}</h3>
+            <div className='flex justify-between lg:ml-4 mt-4'>
+                <p className='bg-green-100 text-green-600 flex items-center gap-2 p-1 rounded-md'><BiDownload />{downloads}</p>
+                <p className='bg-amber-100 text-amber-600 flex items-center gap-2 p-1 rounded-md lg:mr-4'><FaStar />{ratingAvg}</p>
+            </div>
+        </div>
+    )
+}
+
+export default Card

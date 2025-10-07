@@ -19,7 +19,7 @@ const Nav = () => {
                         <NavLink to="/installedApps" className={({ isActive }) => isActive ? "bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-transparent bg-clip-text border-b-2 border-violet-600" : ''}><span>Installation</span></NavLink>
                     </ul>
                 </div>
-                <NavLink to="/"><a className="btn btn-ghost text-lg font-bold bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-transparent bg-clip-text"> <img className='h-10 w-10' src={NavImg} alt="" /> HERO.IO</a></NavLink>
+                <NavLink to="/"><div className="btn btn-ghost text-lg font-bold bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-transparent bg-clip-text"> <img className='h-10 w-10' src={NavImg} alt="" /> HERO.IO</div></NavLink>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="flex gap-8">
