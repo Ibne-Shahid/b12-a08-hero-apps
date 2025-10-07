@@ -1,9 +1,15 @@
 import React from 'react'
 import Banner from '../components/Banner'
+import State from '../components/State'
 
 const Home = () => {
   return (
-    <Banner></Banner>
+    <>
+      <Banner></Banner>
+      <State></State>
+    </>
+    
+    
   )
 }
 
