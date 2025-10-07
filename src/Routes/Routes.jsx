@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router";
 import RootLayout from "../root-layout/RootLayout";
-import Home from "../components/pages/Home";
-import AllApps from "../components/pages/AllApps";
+import Home from "../pages/Home";
+import AllApps from "../pages/AllApps";
+import InstalledApps from "../pages/InstalledApps";
 
 const router = createBrowserRouter([
     {
@@ -16,7 +17,12 @@ const router = createBrowserRouter([
             {
                 path: "/apps",
                 element: <AllApps></AllApps>
+            },
+            {
+                path: "/installedApps",
+                element: <InstalledApps></InstalledApps>
             }
+            
         ]
     }
 ]);
