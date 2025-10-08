@@ -14,7 +14,7 @@ const AppDetailsComponent = ({ app, handleInstall, isClicked }) => {
                         <h3 className='text-[#001931] font-bold text-3xl'>{app?.title}</h3>
                         <p className='text-[#627382] text-md'>Developed by <span className='text-violet-600'>{app?.companyName}</span></p>
                         <hr className='text-gray-400 mt-3 w-full hidden md:block' />
-                        <button onClick={handleInstall} disabled={isClicked} className="btn btn-accent text-white text-xs md:text-base mt-4 md:hidden">{isClicked ? "Installed" : `Install Now (${app?.size} MB)`}</button>
+                        <button onClick={()=>handleInstall(app?.id)} disabled={isClicked} className="btn btn-accent text-white text-xs md:text-base mt-4 md:hidden">{isClicked ? "Installed" : `Install Now (${app?.size} MB)`}</button>
                         <div className='hidden md:block'>
                             <div className='mt-3 flex gap-10'>
                                 <div className='space-y-1'>
@@ -34,7 +34,7 @@ const AppDetailsComponent = ({ app, handleInstall, isClicked }) => {
                                 </div>
                             </div>
                         </div>
-                        <button onClick={handleInstall} disabled={isClicked} className="btn btn-accent text-white mt-4 hidden md:block">{isClicked ? "Installed" : `Install Now (${app?.size} MB)`}</button>
+                        <button onClick={()=>handleInstall(app?.id)} disabled={isClicked} className="btn btn-accent text-white mt-4 hidden md:block">{isClicked ? "Installed" : `Install Now (${app?.size} MB)`}</button>
                     </div>
                 </div>
                 <div className='mt-5 grid grid-cols-3 gap-2 text-center md:hidden'>
