@@ -11,7 +11,7 @@ const AllApps = () => {
   const searchedApps = term ? apps.filter(app => app.title.toLowerCase().includes(term)) : apps
 
   return (
-    <div className='bg-[#D2D2D2] py-10 px-10'>
+    <div className='bg-[#D2D2D2] p-10'>
       <h1 className='text-[#001931] font-bold text-4xl lg:text-5xl text-center'>Our All Applications</h1>
       <p className='text-[#627382] text-center mt-3 text-sm md:text-base'>Explore All Apps on the Market developed by us. We code for Millions</p>
       <div className='mt-5 flex flex-col-reverse md:flex-row justify-between items-center'>
