@@ -28,7 +28,7 @@
     "reviews": 2000000,
     "ratingAvg": 4.6,
     "downloads": "50M",
-    "downloadsNum":50000000,
+    "downloadsNum":500000000,
     "ratings": [
       { "name": "1 star", "count": 40000 },
       { "name": "2 star", "count": 200000 },
