@@ -10,7 +10,7 @@ const AppDetailsComponent = ({ app, handleInstall, isClicked }) => {
             <div className='bg-[#D2D2D2] p-10'>
                 <div className='flex gap-8'>
                     <img className='w-[150px] h-[150px] md:w-[250px] md:h-[250px]' src={app?.image} alt="" />
-                    <div className='w-5/6'>
+                    <div className='md:w-5/6'>
                         <h3 className='text-[#001931] font-bold text-3xl'>{app?.title}</h3>
                         <p className='text-[#627382] text-md'>Developed by <span className='text-violet-600'>{app?.companyName}</span></p>
                         <hr className='text-gray-400 mt-3 w-full hidden md:block' />
@@ -40,17 +40,17 @@ const AppDetailsComponent = ({ app, handleInstall, isClicked }) => {
                 <div className='mt-5 grid grid-cols-3 gap-2 text-center md:hidden'>
                     <div className='space-y-1'>
                         <BsDownload className='text-green-600 w-10 h-10 mx-auto' />
-                        <p className='text-[#627382] text-sm md:text-base'>Downloads</p>
+                        <p className='text-[#627382] text-xs'>Downloads</p>
                         <p className='text-[#001931] text-2xl font-extrabold'>{app?.downloads}</p>
                     </div>
                     <div className='space-y-1'>
                         <FaStar className='text-orange-500 w-10 h-10 mx-auto' />
-                        <p className='text-[#627382] text-sm md:text-base'>Average Ratings</p>
+                        <p className='text-[#627382] text-xs'>Average Ratings</p>
                         <p className='text-[#001931] text-2xl font-extrabold'>{app?.ratingAvg}</p>
                     </div>
                     <div className='space-y-1'>
                         <TbFileLike className='text-violet-600 w-10 h-10 mx-auto' />
-                        <p className='text-[#627382] text-sm md:text-base'>Total Reviews</p>
+                        <p className='text-[#627382] text-xs'>Total Reviews</p>
                         <p className='text-[#001931] text-2xl font-extrabold'>{app?.reviews}</p>
                     </div>
                 </div>

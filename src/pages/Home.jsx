@@ -16,7 +16,7 @@ const Home = () => {
     <>
       <Banner></Banner>
       <State></State>
-      {loading? <Loader></Loader> : error|| apps.length <=0 ? <Error></Error> : <TrendingApps apps={apps}></TrendingApps>}
+      {loading? <Loader></Loader> : error|| apps?.length <=0 ? <Error></Error> : <TrendingApps apps={apps}></TrendingApps>}
       
     </>
     

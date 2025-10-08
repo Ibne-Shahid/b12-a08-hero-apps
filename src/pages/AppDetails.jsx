@@ -8,28 +8,28 @@ import Error from './Error';
 
 
 const AppDetails = () => {
+    const { apps, loading, error } = useFetchApp()
     const [isClicked, setIsClicked] = useState(false)
     const { id } = useParams()
-    const { apps, loading, error } = useFetchApp()
+    
 
-    const app = apps.find(a => String(a.id) === String(id))
-    console.log(app?.image);
-
-
-
+    const app = apps.find(a => String(a.id) === id)
+    
 
     const handleInstall = () => {
+
         setIsClicked(true)
         Swal.fire({
             title: "This app is installed!",
             icon: "success"
         });
+
     }
 
 
     return (
         <div>
-            {loading? <Loader></Loader> : error|| apps.length <=0 ? <Error></Error> : <AppDetailsComponent app={app} handleInstall={handleInstall} isClicked={isClicked}></AppDetailsComponent>}
+            {loading? <Loader></Loader> : error|| !app ? <Error></Error> : <AppDetailsComponent app={app} handleInstall={handleInstall} isClicked={isClicked}></AppDetailsComponent>}
         </div>
     )
 }

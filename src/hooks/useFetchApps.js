@@ -1,3 +1,4 @@
+import axios from "axios"
 import { useEffect, useState } from "react"
 import { data } from "react-router"
 
@@ -9,9 +10,8 @@ const useFetchApp = ()=>{
 
     useEffect(()=>{
         setLoading(true)
-        fetch('../apps.json')
-        .then(res => res.json())
-        .then(data=>{setApps(data);
+        axios('../apps.json')
+        .then(data=>{setApps(data.data);
         setLoading(false)})
         .catch((err) => {
         setError(err.message);
