@@ -23,7 +23,7 @@ const AppDetails = () => {
 
         setIsClicked(true)
         Swal.fire({
-            title: "This app is installed!",
+            title: "This App Is Installed!",
             icon: "success"
         });
 
