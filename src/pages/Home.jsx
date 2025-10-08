@@ -2,16 +2,22 @@ import React from 'react'
 import Banner from '../components/Banner'
 import State from '../components/State'
 import TrendingApps from '../components/TrendingApps'
-import { useLoaderData } from 'react-router'
+import useFetchApp from '../hooks/useFetchApps'
+import Loader from '../components/Loader'
+import Error from './Error'
 
 const Home = () => {
-  const apps = useLoaderData()
+  
+  const { apps, loading, error } = useFetchApp()
+  
+  
   
   return (
     <>
       <Banner></Banner>
       <State></State>
-      <TrendingApps apps={apps}></TrendingApps>
+      {loading? <Loader></Loader> : error|| apps.length <=0 ? <Error></Error> : <TrendingApps apps={apps}></TrendingApps>}
+      
     </>
     
     

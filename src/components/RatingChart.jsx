@@ -10,9 +10,9 @@ import {
 } from 'recharts';
 
 
-const RatingChart = ({ singleApp }) => {
+const RatingChart = ({ app }) => {
 
-    const { ratings } = singleApp
+    const ratings = app?.ratings
 
     return (
         <div className='max-w-[1250px] h-[400px] mt-5'>

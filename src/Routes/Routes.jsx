@@ -16,12 +16,10 @@ const router = createBrowserRouter([
                 index: true,
                 path: "/",
                 element: <Home></Home>,
-                loader: ()=>fetch('/apps.json')
             },
             {
                 path: "/apps",
                 element: <AllApps></AllApps>,
-                loader: ()=>fetch('/apps.json')
             },
             {
                 path: "/installedApps",
@@ -29,16 +27,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/appDetails/:id",
-                element: <AppDetails></AppDetails>,
-                loader: async({params})=>{
-                    const res = await fetch('/apps.json')
-                    const data = await res.json()
-                    const app = data.find(a=> a.id === parseInt(params.id))
-                    if (!app) throw new Response('not found', {status: 404})
-                        return app
-                },
-                errorElement: <AppError></AppError>
-                
+                element: <AppDetails></AppDetails>
             },
             {
                 path: '*',
