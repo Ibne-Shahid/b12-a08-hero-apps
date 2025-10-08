@@ -10,10 +10,7 @@ import RatingChart from '../components/RatingChart';
 const AppDetails = () => {
     const [isClicked, setIsClicked] = useState(false)
 
-    const { id } = useParams()
-    const appId = parseInt(id)
-    const apps = useLoaderData()
-    const singleApp = apps.find(app => app.id === appId)
+    const singleApp = useLoaderData()
 
     const handleInstall = () => {
         setIsClicked(true)
@@ -26,6 +23,7 @@ const AppDetails = () => {
 
     return (
         <div className='bg-[#D2D2D2] p-10'>
+            
             <div className='flex gap-8'>
                 <img className='w-[150px] h-[150px] md:w-[250px] md:h-[250px]' src={singleApp.image} alt="" />
                 <div className='w-5/6'>

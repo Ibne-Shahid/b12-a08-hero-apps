@@ -6,7 +6,7 @@ import { Link } from 'react-router';
 const Card = ({ app }) => {
     const { image, title, downloads, ratingAvg, id } = app
     return (
-        <div>
+        <div className='hover:scale-105 transition ease-in-out'>
             <Link to={`/appDetails/${id}`}>
                 <div className='bg-white py-5 px-3 rounded-md'>
                     <img className='w-full h-auto max-w-[250px] aspect-square object-contain mx-auto rounded-lg' src={image} alt="" />

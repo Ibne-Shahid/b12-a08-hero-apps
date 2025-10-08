@@ -1,12 +1,9 @@
 import React from 'react'
 import {
     ComposedChart,
-    Line,
-    Area,
     Bar,
     XAxis,
     YAxis,
-    CartesianGrid,
     Tooltip,
     Legend,
     ResponsiveContainer,
@@ -38,7 +35,7 @@ const RatingChart = ({ singleApp }) => {
                     <Tooltip />
                     <Legend />
 
-                    <Bar dataKey="count" barSize={30} fill="#413ea0" />
+                    <Bar dataKey="count" barSize={30} fill="#ff8811" />
 
                 </ComposedChart>
             </ResponsiveContainer>

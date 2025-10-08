@@ -4,6 +4,8 @@ import Home from "../pages/Home";
 import AllApps from "../pages/AllApps";
 import InstalledApps from "../pages/InstalledApps";
 import AppDetails from "../pages/AppDetails";
+import Error from "../pages/Error";
+import AppError from "../pages/AppError";
 
 const router = createBrowserRouter([
     {
@@ -28,7 +30,19 @@ const router = createBrowserRouter([
             {
                 path: "/appDetails/:id",
                 element: <AppDetails></AppDetails>,
-                loader: ()=>fetch('/apps.json')
+                loader: async({params})=>{
+                    const res = await fetch('/apps.json')
+                    const data = await res.json()
+                    const app = data.find(a=> a.id === parseInt(params.id))
+                    if (!app) throw new Response('not found', {status: 404})
+                        return app
+                },
+                errorElement: <AppError></AppError>
+                
+            },
+            {
+                path: '*',
+                element: <Error></Error>
             }
             
         ]

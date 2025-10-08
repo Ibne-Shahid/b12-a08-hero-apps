@@ -24,7 +24,7 @@ const AllApps = () => {
           ''
         }
       </div>
-      <NoApps></NoApps>
+      {searchedApps.length<=0 && <NoApps></NoApps>}
     </div>
   )
 }
