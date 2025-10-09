@@ -45,14 +45,14 @@ const InstalledApps = () => {
       <h1 className='text-[#001931] font-bold text-4xl lg:text-5xl text-center'>Your Installed Apps</h1>
       <p className='text-[#627382] text-center mt-3 text-sm md:text-base'>Explore All Trending Apps on the Market developed by us</p>
       <div className='flex justify-between items-center mt-8'>
-        <p className='mt-5 text-lg font-semibold'>({installedAppsData.length}) Apps Found</p>
+        <p className='text-[#001931] mt-5 text-lg font-semibold'>({installedAppsData.length}) Apps Found</p>
         <select value={sortOrder} onChange={e => setSortOrder(e.target.value)} className='border border-gray-400 p-2 rounded-md'>
           <option value='High'>High To Low</option>
           <option value='Low'>Low To High</option>
         </select>
       </div>
 
-      {loading ? <Loader></Loader> : error ? <AppError></AppError> : installedAppsData.map(app => <InsApps key={app?.id} app={app} handleUnInstall={handleUnInstall}></InsApps>)}
+      {loading ? <Loader></Loader> : error ? <AppError></AppError> : installedAppsData.length<=0? <p className='text-[#001931] text-center mt-10 text-2xl md:text-4xl font-semibold'>No App Installed Yet</p> : installedAppsData.map(app => <InsApps key={app?.id} app={app} handleUnInstall={handleUnInstall}></InsApps>)}
 
     </div>
   )
