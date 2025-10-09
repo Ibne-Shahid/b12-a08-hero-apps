@@ -4,34 +4,25 @@
 
 ## Features
 
-**1. Search Functionality:** Instantly find any by name.
-**2. App Details Page:** View in-depth app info, including description, rating chart, and download stats.
-**3. Dynamic Data Fetching:** Apps are fetched from a JSON file or an API for better scalability.
-**4. Smooth Loading Experience:** Custom loader and error components for better UX.
-**5. Interactive UI:** Built with reusable and modular React components.
-**6. Fully Responsive:** Works seamlessly on Mobile, Tablet, and Desktop devices.
-**7. Optimized Performance:** Efficient rendering and minimal re-render using Hooks.
+**1. Search Functionality:** Instantly find any by name.<br>
+**2. App Details Page:** View in-depth app info, including description, rating chart, and download stats.<br>
+**3. Dynamic Data Fetching:** Apps are fetched from a JSON file or an API for better scalability.<br>
+**4. Smooth Loading Experience:** Custom loader and error components for better UX.<br>
+**5. Interactive UI:** Built with reusable and modular React components.<br>
+**6. Fully Responsive:** Works seamlessly on Mobile, Tablet, and Desktop devices.<br>
+**7. Optimized Performance:** Efficient rendering and minimal re-render using Hooks.<br>
 
 ## Technologies Used
 
 ### Frontend
-
-**1. React.JS:** Component-based UI library for building interactive interfaces.
-
-**2. React Router:** For smooth navigation and route management.
-
-**3. Tailwind CSS:** Utility-first CSS framework for fast and responsive design.
-
-**4. Recharts:** For displaying app ratings analytics in beautiful charts.
-
-**5. React Icons:** Lightweight icons for an elegant visual touch.
+**1. React.JS:** Component-based UI library for building interactive interfaces.<br>
+**2. React Router:** For smooth navigation and route management.<br>
+**3. Tailwind CSS:** Utility-first CSS framework for fast and responsive design.<br>
+**4. Recharts:** For displaying app ratings analytics in beautiful charts.<br>
+**5. React Icons:** Lightweight icons for an elegant visual touch.<br>
 
 ### Additional Tools
-
-**1: SweetAlert2:** For stylish alert and notifications.
-
-**2. Custom Hooks:** For fetching and managing app data efficiently.
-
-**3. Local Storage:** Used to store installed apps and user preferences.
-
-**4. Vite:** For lighting-fast development and build optimization.
+**1: SweetAlert2:** For stylish alert and notifications.<br>
+**2. Custom Hooks:** For fetching and managing app data efficiently.<br>
+**3. Local Storage:** Used to store installed apps and user preferences.<br>
+**4. Vite:** For lighting-fast development and build optimization.<br>
