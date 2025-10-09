@@ -41,7 +41,7 @@ const InstalledApps = () => {
 
 
   return (
-    <div className='bg-[#D2D2D2] px-2 py-5 md:p-10'>
+    <div className='bg-[#F1F5E8] px-3 py-5 md:p-10'>
       <h1 className='text-[#001931] font-bold text-4xl lg:text-5xl text-center'>Your Installed Apps</h1>
       <p className='text-[#627382] text-center mt-3 text-sm md:text-base'>Explore All Trending Apps on the Market developed by us</p>
       <div className='flex justify-between items-center mt-8'>

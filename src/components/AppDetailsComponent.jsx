@@ -7,7 +7,7 @@ import RatingChart from './RatingChart';
 const AppDetailsComponent = ({ app, handleInstall, isClicked }) => {
     return (
         <div>
-            <div className='bg-[#D2D2D2] p-10'>
+            <div className='bg-[#F1F5E8] px-3 py-5 md:p-10'>
                 <div className='flex gap-8'>
                     <img className='w-[150px] h-[150px] md:w-[250px] md:h-[250px]' src={app?.image} alt="" />
                     <div className='md:w-5/6'>
