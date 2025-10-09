@@ -15,14 +15,23 @@
 ## Technologies Used
 
 ### Frontend
+
 **1. React.JS:** Component-based UI library for building interactive interfaces.
+
 **2. React Router:** For smooth navigation and route management.
+
 **3. Tailwind CSS:** Utility-first CSS framework for fast and responsive design.
+
 **4. Recharts:** For displaying app ratings analytics in beautiful charts.
+
 **5. React Icons:** Lightweight icons for an elegant visual touch.
 
 ### Additional Tools
+
 **1: SweetAlert2:** For stylish alert and notifications.
+
 **2. Custom Hooks:** For fetching and managing app data efficiently.
+
 **3. Local Storage:** Used to store installed apps and user preferences.
+
 **4. Vite:** For lighting-fast development and build optimization.
